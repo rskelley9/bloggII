@@ -11,6 +11,11 @@ get '/' do
 	end
 end
 
+get '/post/0' do
+
+	redirect '/post/1'
+end
+
 get '/post/:post_id' do
 
 	@post = Post.find(params[:post_id])
@@ -30,6 +35,17 @@ get '/main' do
 	@posts = Post.all
 
 	erb :main
+end
+
+get '/logout' do
+
+	if session?
+
+		session_end!(destroy=true)
+		session[:user_id] = nil
+	end
+
+	redirect '/'
 end
 
 

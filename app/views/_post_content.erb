@@ -1,3 +1,8 @@
 <h1 style="color:rgb(222,40,16);text-align:center;"><u><%= @post.title%></u></h1>
 
-<p style="text-align:center;color:rgb(0,192,255);"><%= @post.content %></p>
+<p id="post_content" style="text-align:center;color:rgb(0,192,255);"><%= @post.content %></p>
+
+<div class="button" style="color: rgb(255, 255, 255);">
+	<a id="button_previous" href="/post/<%= @post.id - 1%>" style="color: rgb(0, 192, 255);">Previous</a>
+	<a id="button_next" href="/post/<%= @post.id + 1%>" style="color: rgb(0, 192, 255);">Next</a>
+</div>
