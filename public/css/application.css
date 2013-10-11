@@ -29,6 +29,35 @@ nav {
 
 }
 
+#welcome {
+	color: rgb(222,40,16);
+	font-family: Creepster;
+	margin-left:47%;
+}
+
+textarea{
+	margin-left:37%;
+}
+
+input#title{
+		margin-left:47%;
+}
+
+label#new_post {
+	margin-left:45%;
+}
+
+input#tags {
+	margin-left:47%;
+}
+
+input#post_submit {
+	margin-left:47%;
+}
+
+
+}
+
 .navbar h1{
 	margin-top:0%;
 }

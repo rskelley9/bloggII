@@ -1,16 +1,16 @@
-<h1 style="font-weight:bold;"> Welcome <%= @user.first_name%>!</h1>
+<h1 id="welcome" style="font-weight:bold;"> Welcome <%= @user.first_name%>!</h1>
 
 <p style="text-align:center;font-family:courier;color:bold;font-weight:bold;"></p>
 <form id="new_post" action="/create-post" method="POST">
-	<textarea form="new_post" rows="4" cols="30" name="content"></textarea>
+	<textarea form="new_post" rows="4" cols="50" name="content"></textarea>
 	<br>
 		<label id="new_post" for="title">Title</label>
-		<input type="text" name="title">
+		<input id="title" type="text" name="title">
 		<br>
 		<label id="new_post" for="tags">Tags</label>
 		<input id="tags" type="text" name="name">
 		<br>
-		<input type="submit" value="SUBMIT">
+		<input id="post_submit" type="submit" value="SUBMIT">
 	</form>
 
 	
