@@ -1,0 +1,22 @@
+<div>
+  <h1 style="padding:30px;color:rgb(222,40,16);font-family: Butcherman, cursive;">Authors Login Here</h1>
+
+  <div id="Login">
+    <form action="/login" method="POST">
+      <label for="email" style="padding:30px;font-size:25pt;color:rgb(222,40,16);font-family: Butcherman, cursive;">Email</label>  
+      <input type="text" name="email" style="padding:10px;">
+      <label for="password" style="font-size:25pt;padding:30px;color:rgb(222,40,16);font-family: Butcherman, cursive;">Password</label>
+      <input type="password" name="password" style="padding:10px;">
+      <input type="submit" value="SUBMIT" style="padding:10px;color:rgb(222,40,16);">
+    </form>;
+  </div> <!-- Login end -->
+
+
+  <p><a style="margin-left:30px;font-family: Butcherman, cursive;font-weight:bold;color:rgb(192,192,0);"href="/main">Continue to Main Page</a></p>
+
+
+
+<% if @errors %>
+<h1 style="color:red;"><u>Errors</u><h1>
+<p<%= @errors %></p>
+<% end %>

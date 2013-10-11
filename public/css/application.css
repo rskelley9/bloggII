@@ -1,0 +1,23 @@
+.container {
+	margin: 20px auto;
+	width: 600px;
+	padding: 0px 20px 20px 20px;
+	border: 1px dotted black;
+}
+
+th {
+	text-align: left;
+}
+
+body {
+	background-image:url('http://fc03.deviantart.net/fs45/f/2009/137/d/9/Blog_Background_Design_by_Hacheke.jpg');
+}
+
+nav {
+	background-color: rgb(192,192)
+}
+
+#new_post{
+	color: rgb(222,40,16);
+	font-family: Butcherman, cursive;
+}

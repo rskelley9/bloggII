@@ -1,0 +1,7 @@
+
+<div style="margin-left:150px; color: rgb(222,40,16)">
+<% @posts.each do |post| %>
+<a style="color:rgb(222,40,16);"href="/post/<%= post.id%>"><h2 style="color:rgb(222,40,16); font-family:'Butcherman', cursive;"><%= post.title %></h2></a>
+	<% end %>
+
+</div>
